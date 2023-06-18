@@ -1,0 +1,425 @@
+@font-face {
+	font-family: 'Pretendard';
+	src:url('/images/Pretendard-Light.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol,
+ul {
+list-style: none;
+}
+blockquote,
+q {
+quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+content: "";
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+body{
+    font-family: 'Signika Negative';
+    height: 15000px;
+    background:linear-gradient(to bottom, #38215f, #d15858, #d18f58, #d15858, #633f5a, #6e078a, #8e2674, #53326c,#53326c, #53326c, #53326c, #53326c,  #420d5d, #452655,#2e1938,#38215f, #d15858, #d18f58, #d15858, #633f5a, #6e078a, #8e2674, #53326c, #420d5d, #452655,#2e1938, #2a1e30, #2a1e30, #38215f, #d1588a, #b74286, #632758, #53326c, #420d5d, #391c47,#2e1938,#2a1e30,#2a1e30,#2a1e30,#2a1e30,#2a1e30,#2a1e30, #000000);
+}
+
+.section h1 {
+    font-family: 'Signika Negative';
+    -webkit-text-stroke: 2px rgb(255, 255, 255); /* 웹킷 기반 브라우저에서 스트로크 설정 */
+    -webkit-text-fill-color: transparent; /* 텍스트 채우기를 투명하게 설정 */
+    color: transparent; /* 텍스트 색상을 투명하게 설정 */
+    position: fixed;
+    top: 50%; /* 수직 중앙 정렬을 위한 top 속성 추가 */
+    left: 50%; /* 수평 중앙 정렬을 위한 left 속성 추가 */
+    transform: translate(-50%, -50%); /* 중앙 정렬을 위한 transform 속성 추가 */
+    font-weight: 800;
+    font-size: 400px;
+    transition: font-size 2s, color 1s ease-in-out; /* 부드러운 전환 효과를 위한 transition 속성 추가 */
+    text-align: center;
+    animation: bounce 0.7s ease-out alternate-reverse infinite;
+}
+.section {
+    height: 40vh; /* 각 섹션의 높이 조정 */
+}
+#sim{
+    height: 100vh;
+}
+#sim1{
+    height: 60vh;
+}
+
+
+.main-content-1 {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 300vh;
+}
+
+.sticky-title {
+    width: 100%;
+    height: 76vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.title {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(45, 36, 53);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    font-size: 2.5vh;
+    font-weight: bolder;
+    padding-left: 3vh;
+}
+
+.content {
+    height: 94vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.start-screen {
+    padding-top: 4vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.656);
+}
+.start-screen > h1 {
+    animation: bounce 0.5s ease-out alternate-reverse infinite;
+}
+
+@keyframes bounce {
+    100% {
+    transform: translateY(-60%);
+    }
+}
+
+.end-screen {
+    font-size: 8vw;
+}
+
+.main-content-01 {
+    width: 100%;
+    height: 500vh;
+}
+
+.sticky0 {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.card-frame {
+    position: absolute;
+    width: 80vw;
+    height: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    font-size: 20vw;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: perspective(100vw)
+    translateX(100vw) 
+    rotateY(180deg);
+    transition: transform 0.1s;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    font-weight: lighter;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.front img{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 70%;
+}
+.front h2{
+    margin-top: 28px;
+}
+.front p{
+    margin: 24px 20px 0px 20px;
+    font-size: 2.2vh;
+    font-family: 'Pretendard';
+    font-weight: light;
+}
+.back {
+    transform: rotateY(180deg);
+    background-color: rgba(255, 255, 255, 0.2);
+    background-image: repeating-linear-gradient(0deg, #ffffff32, #ffffff32 20%, #ffffff00 0px, #ffffff00 80%);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (orientation:portrait) {
+    .card-frame {
+    display: grid;
+    height: initial;
+    width: initial;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10vw;
+    justify-items: center;
+    }
+
+    .card {
+    font-size: 20vw;
+    width: 35vw;
+    height: 50vw;
+    }
+}
+
+#third{
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 400px;
+    background:rgba(0, 0, 0, 0.2) ;
+}
+
+.container {
+    background: linear-gradient(  #e58958,#a94646, #6e078a,#4f2c41,#2a1e30,  #2a1e30, #000000);
+    position: absolute;
+    width: 80vw;
+    height: 44vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.poster1 img, .poster2 img{
+    width: 80vw;
+    height:12vw;
+
+}
+
+.poster1,
+.poster2 {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    transition: all 2s;
+    animation: bounce2 1s alternate-reverse infinite;
+    
+}
+@keyframes bounce2 {
+    100% {
+    transform: translateY(-10%);
+    }
+}
+@keyframes fadeIn {
+    0% {
+    opacity: 0; /* 시작 시 투명 */
+    transform: translate(-50%, -50%) scale(1.2); /* 시작 시 크기를 조금 크게 */
+    }
+    100% {
+    opacity: 1; /* 끝나는 시점에 불투명 */
+    transform: translate(-50%, -50%) scale(1); /* 끝나는 시점에 원래 크기로 */
+    }
+}
+
+#fourth{
+    margin-top: 300px;
+}
+.slideshow-container {
+    position: relative;
+    height: 50vw;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.slide.active {
+    opacity: 1;
+}
